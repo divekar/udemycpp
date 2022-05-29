@@ -14,24 +14,32 @@ double GetTax(double tax, int num_of_rooms, double price_per_person)
 
 void EX51_Exercise()
 {
-	double price_per_person {30};
+	double price_per_large_room {30};
+	double price_per_small_room {25};
 	cout << "========================================\n";
 	cout << "Welcome to Frank's Carpet Cleaning Service!\n";
 	cout << "How many rooms would you like cleaned?";
-	int num_of_rooms {0};
+	int num_of_small_rooms {0};
+	int num_of_large_rooms {0};
+	
 	double tax {0.06};
-	cin >> num_of_rooms;
 
 	cout << "\n";
 
 	cout << "----------------------------------------\n";
 	cout << "Estimate for carpet cleaning service\n";
-	cout << "Number of rooms: " << num_of_rooms << "\n";
-	cout << "Price per person: " << price_per_person << "\n";
-	cout << "Cost: $" << GetCost(num_of_rooms, price_per_person) << "\n";
-	cout << "Tax: $" << GetTax(tax, num_of_rooms, price_per_person) << "\n";
+	cout << "Number of small rooms: " ; cin >> num_of_small_rooms;
+	cout << "Number of large rooms: "; cin >> num_of_large_rooms;
+	cout << "Price per small room: $" << price_per_small_room << "\n";
+	cout << "Price per large room: $" << price_per_large_room << "\n";
+	cout << "Cost: $" << GetCost(num_of_small_rooms, price_per_small_room)  +
+		GetCost(num_of_large_rooms, price_per_large_room) << "\n";
+	cout << "Tax: $" << GetTax(tax, num_of_small_rooms, price_per_small_room) +
+		GetTax(tax, num_of_large_rooms, price_per_large_room) << "\n";
 	cout << "========================================\n";
-	cout << "Total Estimate: $" << GetCost(num_of_rooms, price_per_person) + 
-		GetTax(tax, num_of_rooms, price_per_person) << "\n";
+	cout << "Total Estimate: $" <<  GetCost(num_of_small_rooms, price_per_small_room)  +
+		GetCost(num_of_large_rooms, price_per_large_room) +
+		 GetTax(tax, num_of_small_rooms, price_per_small_room) +
+		GetTax(tax, num_of_large_rooms, price_per_large_room) << "\n";
 	cout << "This estimate is valid for 30 days\n";
 }
