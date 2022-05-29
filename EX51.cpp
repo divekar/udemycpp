@@ -14,7 +14,7 @@ double GetTax(double tax, int num_of_rooms, double price_per_person)
 
 void EX51_Exercise()
 {
-	double price_per_large_room {30};
+	double price_per_large_room {35};
 	double price_per_small_room {25};
 	cout << "========================================\n";
 	cout << "Welcome to Frank's Carpet Cleaning Service!\n";
