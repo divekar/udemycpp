@@ -1,8 +1,10 @@
 #include <iostream>
+#include "EX51.cpp"
 using namespace std;
 
 int main()
 {
+	/* Basic Example
 	cout << "Hello World: Enter your favorite number between 1 and 100: ";
 	int x;
 	cin >> x;
@@ -11,4 +13,6 @@ int main()
 	else
 		cout << "Oh o! Try again!\n";
 	return 0;
+	*/
+	EX51_Exercise();
 }
