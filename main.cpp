@@ -1,6 +1,7 @@
 #include <iostream>
 #include "EX51.cpp"
 #include "EX60.cpp"
+#include "EX74.cpp"
 using namespace std;
 
 int main()
@@ -16,5 +17,6 @@ int main()
 	return 0;
 	*/
 //	EX51_Exercise();
-	EX60_Exercise();
+	//EX60_Exercise();
+	EX74_GetCoins();
 }
