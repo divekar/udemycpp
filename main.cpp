@@ -1,5 +1,6 @@
 #include <iostream>
 #include "EX51.cpp"
+#include "EX60.cpp"
 using namespace std;
 
 int main()
@@ -14,5 +15,6 @@ int main()
 		cout << "Oh o! Try again!\n";
 	return 0;
 	*/
-	EX51_Exercise();
+//	EX51_Exercise();
+	EX60_Exercise();
 }
