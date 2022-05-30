@@ -2,6 +2,7 @@
 #include "EX51.cpp"
 #include "EX60.cpp"
 #include "EX74.cpp"
+#include "EX90.cpp"
 using namespace std;
 
 int main()
@@ -18,5 +19,6 @@ int main()
 	*/
 //	EX51_Exercise();
 	//EX60_Exercise();
-	EX74_GetCoins();
+	//EX74_GetCoins();
+	EX90_Exercise();
 }
